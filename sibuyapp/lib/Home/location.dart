@@ -42,7 +42,7 @@ class _LocationWidgetState extends State<LocationWidget> {
           Padding(
             padding: EdgeInsets.only(left: 24.0),
             child: Text(
-              '125/1 รป คลองหลวง คลองหก ซอยมาลี .',
+              '125/1 รป คลองหลวง คลองหก ซอยพร .',
               style: AppFonts
                   .ticontentsmell, // Ensure this font is defined in your custom font class
             ),
