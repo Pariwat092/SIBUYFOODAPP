@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="flutter_application_sibuyfood"
+        android:label="SI BUY FOOD"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -57,7 +57,6 @@ class _BannerSliderState extends State<BannerSlider> {
             children: [
               Container(
                 color: Appcolor.white,
-               
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(16),
                   child: SizedBox(
