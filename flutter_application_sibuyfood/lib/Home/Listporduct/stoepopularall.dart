@@ -81,7 +81,7 @@ class Stoepopularall extends StatelessWidget {
                   child: Row(
                     children: [
                       CircleAvatar(
-                        radius: 30,
+                        radius: 25,
                         backgroundImage: NetworkImage(store['profileImage']!),
                       ),
                       SizedBox(width: 12),
