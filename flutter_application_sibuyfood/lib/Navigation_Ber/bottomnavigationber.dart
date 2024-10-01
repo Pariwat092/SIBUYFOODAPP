@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/Home/home1.dart';
@@ -29,8 +29,8 @@ class _MainpageState extends State<Mainpage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Appcolor.white,
-        selectedItemColor: Color.fromARGB(255, 28, 138, 182),
-        unselectedItemColor: Colors.black.withOpacity(0.6),
+        selectedItemColor: Appcolor.deepTeal,
+        unselectedItemColor: Appcolor.black.withOpacity(0.6),
         currentIndex: index,
         onTap: (newIndex) {
           setState(() {

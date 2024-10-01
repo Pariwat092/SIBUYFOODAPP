@@ -7,7 +7,7 @@ class AppFonts {
   // App bar
   static final TextStyle tiappbar = GoogleFonts.notoSans(
     textStyle: const TextStyle(
-      fontSize: 24,
+      fontSize: 18,
       fontWeight: FontWeight.bold,
       color: Colors.black,
     ),

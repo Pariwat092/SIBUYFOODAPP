@@ -40,6 +40,7 @@ class Firstlogin extends StatelessWidget {
                   Text(
                     'Si Buy Food',
                     style: TextStyle(
+                      color: Appcolor.black,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -138,8 +139,8 @@ class Firstlogin extends StatelessWidget {
                 mainAxisAlignment:
                     MainAxisAlignment.center, // จัดตำแหน่งให้อยู่กลาง
                 children: [
-                  Text('ดำนเินการต่อไปในฐานเเขก',
-                      style: TextStyle(fontSize: 14, color: Appcolor.black)),
+                  Text('ดำเนินการในฐานะเเขก',
+                      style: TextStyle(fontSize: 14, color: Appcolor.teal)),
                 ],
               ),
             ),

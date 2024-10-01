@@ -115,13 +115,12 @@ class Home1 extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    height: 40,
-                    width: 370,
-                    child: CustomTextFormField(
+                      height: 40,
+                      width: 370,
+                      child: CustomTextFormField(
                         hintText: 'ค้นหา',
                         prefixIcon: Icons.search,
-                        textStyle: AppFonts.ticontentsmell),
-                  ),
+                      )), //เเก้อีกดีไซน์อีกทีเพราะว่า ต้องทำเป็น ฟังก์ชัน ค้นหา
                   SizedBox(
                     height: 25,
                   ),

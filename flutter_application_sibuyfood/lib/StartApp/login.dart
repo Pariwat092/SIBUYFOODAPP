@@ -1,8 +1,9 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/Navigation_Ber/bottomnavigationber.dart';
 import 'package:sibuyapp/classallapp/colors.dart';
+import 'package:sibuyapp/classallapp/costomappbar.dart';
 import 'package:sibuyapp/classallapp/textfromfield.dart';
 
 class Loginpega extends StatelessWidget {
@@ -13,6 +14,9 @@ class Loginpega extends StatelessWidget {
     return Scaffold(
       backgroundColor: Appcolor.white,
       resizeToAvoidBottomInset: false,
+      appBar: CustomAppBar(
+        title: '',
+      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Center(

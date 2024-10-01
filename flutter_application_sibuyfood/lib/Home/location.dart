@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sibuyapp/classallapp/colors.dart';
 import 'package:sibuyapp/classallapp/styleText.dart';
 
 class LocationWidget extends StatefulWidget {
@@ -18,7 +19,7 @@ class _LocationWidgetState extends State<LocationWidget> {
           children: [
             const Icon(
               Icons.location_on,
-              color: Color.fromARGB(255, 29, 110, 185),
+              color: Appcolor.lightGreen,
               size: 20.0,
             ),
             const SizedBox(width: 5.0),
