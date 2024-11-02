@@ -26,12 +26,21 @@ class Firstlogin extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  SizedBox(
+                    height: 20,
+                  ),
                   Container(
-                    width: 100.0,
-                    height: 100.0,
+                    width: 120.0,
+                    height: 120.0,
                     decoration: BoxDecoration(
-                      color: Appcolor.black,
                       shape: BoxShape.circle,
+                      color: Appcolor.white,
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/logont.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   SizedBox(

@@ -144,7 +144,7 @@ class Home1 extends StatelessWidget {
                             children: [
                               Text(
                                 'ประเภทสินค้า',
-                                style: TextStyle(fontSize: 16),
+                                style: AppFonts.ticontent,
                               ),
                             ],
                           ),
@@ -165,10 +165,7 @@ class Home1 extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text('ร้านค้าเเนะนำ',
-                            style: TextStyle(
-                              fontSize: 16,
-                            )),
+                        Text('ร้านค้าเเนะนำ', style: AppFonts.ticontent),
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -231,10 +228,7 @@ class Home1 extends StatelessWidget {
                         SizedBox(
                           width: 1,
                         ),
-                        Text('สินค้าวันนี้',
-                            style: TextStyle(
-                              fontSize: 16,
-                            )),
+                        Text('สินค้าวันนี้', style: AppFonts.ticontent),
                       ],
                     ),
                   ),

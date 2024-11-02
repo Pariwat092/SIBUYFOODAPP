@@ -33,6 +33,7 @@ dependencies:
   google_fonts: ^6.2.1
   flutter_riverpod: ^2.3.7
   cupertino_icons: ^1.0.6
+  # flutter_splash_screen: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +53,8 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/imopenstore.jpg
+    - assets/images/logoapph.png
+    - assets/images/logont.png
   
 
   # The following line ensures that the Material Icons font is
@@ -59,6 +62,16 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
+
+# flutter_native_splash:
+#   color: "#FFFFFF" # Background color
+#   image: assets/images/logoapph.png
+#   android: true
+#   ios: true
+#   android_gravity: center # Center the image on Android
+#   ios_content_mode: center # Center the image on iOS
+#   fullscreen: true
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

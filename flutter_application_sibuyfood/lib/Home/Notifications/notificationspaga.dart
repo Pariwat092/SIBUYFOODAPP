@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class NotificationsPage extends StatelessWidget {
   @override
@@ -16,14 +17,7 @@ class NotificationsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 10),
-              Text(
-                'การแจ้งเตือน',
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black87,
-                ),
-              ),
+              Text('การแจ้งเตือน', style: AppFonts.ticontent),
               SizedBox(height: 20),
               _buildNotificationCard(
                 title: "คำสั่งซื้อของคุณถูกจัดส่งแล้ว",
@@ -72,14 +66,7 @@ class NotificationsPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
-                  ),
-                ),
+                Text(title, style: AppFonts.ticontent),
                 Text(
                   time,
                   style: TextStyle(

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class Homestore extends StatelessWidget {
   @override
@@ -42,13 +43,7 @@ class Homestore extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'ร้านอาหารโอชา',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  Text('ร้านอาหารโอชา', style: AppFonts.ticontent),
                   const SizedBox(height: 8),
                   Text(
                     '456 ถนนเยาวราช, แขวงวังบูรพาภิรมย์, เขตพระนคร, กรุงเทพมหานคร 10200',
@@ -85,13 +80,7 @@ class Homestore extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'สินค้าที่โพสต์ขาย',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  Text('สินค้าที่โพสต์ขาย', style: AppFonts.ticontent),
                   const SizedBox(height: 16),
                   ListView.builder(
                     shrinkWrap: true,
@@ -145,7 +134,12 @@ class Homestore extends StatelessWidget {
             ),
             iconSize: 30.0,
             onPressed: () {
-              Postprpduct();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        PostProduct()), // เปลี่ยนเป็นหน้าที่คุณต้องการ
+              );
               print('Add product button pressed');
             },
           ),
@@ -157,19 +151,94 @@ class Homestore extends StatelessWidget {
 
 //หน้าโพสต์สินค้า
 
-class Postprpduct extends StatelessWidget {
+class PostProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'เพิ่มสินค้าของคุณ',
       ),
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: SingleChildScrollView(
           child: Column(
-        children: [
-          TextField(),
-        ],
-      )),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'ข้อมูลสินค้า',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 16.0),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'ชื่อสินค้า',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox(height: 16.0),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'รายละเอียดสินค้า',
+                  border: OutlineInputBorder(),
+                ),
+                maxLines: 3,
+              ),
+              SizedBox(height: 16.0),
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'ราคา',
+                  border: OutlineInputBorder(),
+                ),
+                keyboardType: TextInputType.number,
+              ),
+              SizedBox(height: 16.0),
+              ElevatedButton.icon(
+                onPressed: () {
+                  // เพิ่มฟังก์ชันสำหรับเลือกรูปภาพ
+                  print('เลือกภาพสินค้า');
+                },
+                icon: Icon(Icons.image),
+                label: Text('เพิ่มรูปภาพ'),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 50),
+                ),
+              ),
+              SizedBox(height: 16.0),
+              DropdownButtonFormField<String>(
+                decoration: InputDecoration(
+                  labelText: 'หมวดหมู่สินค้า',
+                  border: OutlineInputBorder(),
+                ),
+                items: ['อาหาร', 'เสื้อผ้า', 'เครื่องใช้ไฟฟ้า']
+                    .map((category) => DropdownMenuItem(
+                          value: category,
+                          child: Text(category),
+                        ))
+                    .toList(),
+                onChanged: (value) {
+                  // ดำเนินการเมื่อเปลี่ยนหมวดหมู่สินค้า
+                  print('เลือกหมวดหมู่: $value');
+                },
+              ),
+              SizedBox(height: 16.0),
+              ElevatedButton(
+                onPressed: () {
+                  
+               
+                  print('บันทึกสินค้า');
+                },
+                child: Text('บันทึก'),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(double.infinity, 50),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

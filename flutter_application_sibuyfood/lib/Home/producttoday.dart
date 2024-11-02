@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/Home/view_producys.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class ProductToday extends StatelessWidget {
   @override
@@ -53,11 +54,7 @@ class ProductToday extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
                       'ชื่อสินค้า',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black,
-                      ),
+                      style: AppFonts.ticontent1,
                     ),
                   ),
                 ],
@@ -83,40 +80,33 @@ class ProductToday extends StatelessWidget {
               ],
             ),
             child: Column(
-              crossAxisAlignment:
-                  CrossAxisAlignment.start, // จัดตำแหน่งเนื้อหาไปทางซ้าย
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ClipRRect(
-                  borderRadius: BorderRadius.circular(15), // มุมโค้งสำหรับภาพ
+                  borderRadius: BorderRadius.circular(15),
                   child: Image.network(
-                    'https://s359.kapook.com/r/600/auto/pagebuilder/778ebafb-e944-4abd-99c1-e28411656fd4.jpg', // URL รูปภาพสินค้า
+                    'https://s359.kapook.com/r/600/auto/pagebuilder/778ebafb-e944-4abd-99c1-e28411656fd4.jpg',
                     height: 180,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
                 ),
-                SizedBox(height: 10), // ระยะห่างระหว่างภาพและเนื้อหาอื่นๆ
+                SizedBox(height: 10),
                 Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 8.0), // ช่องว่างด้านข้าง
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: Text(
                     'ชื่อสินค้า',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black, // สีตัวหนังสือเรียบง่าย
-                    ),
+                    style: AppFonts.ticontent1,
                   ),
                 ),
                 SizedBox(height: 5),
                 Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 8.0), // ช่องว่างด้านข้าง
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
                   child: Text(
                     'ราคา: \$100',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.grey[700], // สีตัวหนังสือที่อ่อนกว่า
+                      color: Colors.grey[700],
                     ),
                   ),
                 ),

@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, sized_box_for_whitespace, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class Product_type extends StatelessWidget {
   const Product_type({
@@ -34,7 +35,10 @@ class Product_type extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text('เครื่องดื่ม'),
+                Text(
+                  'เครื่องดื่ม',
+                  style: AppFonts.ticontent1,
+                ),
               ],
             ),
           ),
@@ -58,7 +62,10 @@ class Product_type extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text('ของหวาน'),
+                Text(
+                  'ของหวาน',
+                  style: AppFonts.ticontent1,
+                ),
               ],
             ),
           ),
@@ -82,7 +89,10 @@ class Product_type extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text('อาหารสด'),
+                Text(
+                  'อาหารสด',
+                  style: AppFonts.ticontent1,
+                ),
               ],
             ),
           ),
@@ -106,7 +116,10 @@ class Product_type extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text('ของใช้ทั่วไป'),
+                Text(
+                  'ของใช้ทั่วไป',
+                  style: AppFonts.ticontent1,
+                ),
               ],
             ),
           )

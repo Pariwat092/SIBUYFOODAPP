@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class Stoepopularall extends StatelessWidget {
   final List<Map<String, String>> storeList = [
@@ -86,13 +87,7 @@ class Stoepopularall extends StatelessWidget {
                       ),
                       SizedBox(width: 12),
                       Expanded(
-                        child: Text(
-                          store['name']!,
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                        child: Text(store['name']!, style: AppFonts.ticontent),
                       ),
                     ],
                   ),

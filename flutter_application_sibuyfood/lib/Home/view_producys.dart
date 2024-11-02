@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/classallapp/colors.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 
 class ViewProducys extends StatelessWidget {
   @override
@@ -26,7 +27,6 @@ class ViewProducys extends StatelessWidget {
                     height: 370,
                     width: 370,
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 255, 234, 142),
                       borderRadius: BorderRadius.circular(25),
                       image: DecorationImage(
                         image: NetworkImage(
@@ -79,11 +79,7 @@ class ViewProducys extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
-                                'กะเพาหมูกรอบ',
-                                style: TextStyle(
-                                    fontSize: 24, fontWeight: FontWeight.bold),
-                              ),
+                              Text('กะเพาหมูกรอบ', style: AppFonts.ticontent),
                               Container(
                                   child: Row(
                                     mainAxisAlignment:

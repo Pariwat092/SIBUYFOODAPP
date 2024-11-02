@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sibuyapp/Navigation_Ber/bottomnavigationber.dart';
 import 'package:sibuyapp/classallapp/colors.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 import 'package:sibuyapp/classallapp/textfromfield.dart';
 
 class Loginpega extends StatelessWidget {
@@ -23,17 +24,26 @@ class Loginpega extends StatelessWidget {
           child: Form(
             key: _formKey,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
-                  height: 20,
+                  // color: Colors.black,
+                  height: 250,
+                  width: 250,
+                  child: Image.asset(
+                    'assets/images/logoapph.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Container(
+                  height: 30,
                   width: 200,
                   //color: Colors.black,
                   child: Column(
-                    mainAxisAlignment:
-                        MainAxisAlignment.center, // จัดตำแหน่งให้อยู่กลาง
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('เข้าสู่ระบบบัญชีของคุณ'),
+                      Text('เข้าสู่ระบบบัญชีของคุณ',
+                          style: AppFonts.ticontent1),
                     ],
                   ),
                 ),

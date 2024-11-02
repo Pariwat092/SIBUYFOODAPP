@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sibuyapp/classallapp/colors.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 import 'package:sibuyapp/mystore/storepolicy.dart';
 
 class Mystore extends StatelessWidget {
@@ -31,15 +32,8 @@ class Mystore extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    const Text(
-                      'ยินดีต้อนรับสู่โอกาสใหม่!',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 35, 35, 35),
-                      ),
-                    ),
+                    Text('ยินดีต้อนรับสู่โอกาสใหม่!',
+                        textAlign: TextAlign.center, style: AppFonts.ticontent),
                     const SizedBox(height: 20),
                     Text(
                       '"เปิดร้านค้าออนไลน์ของคุณได้ง่ายๆ กับป้ายเหลือง สร้างธุรกิจในฝันของคุณวันนี้!"',
@@ -50,15 +44,8 @@ class Mystore extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    Text(
-                      'พร้อมที่จะเป็นเจ้าของธุรกิจ?',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 19,
-                        fontWeight: FontWeight.bold,
-                        color: const Color.fromARGB(255, 42, 42, 42),
-                      ),
-                    ),
+                    Text('พร้อมที่จะเป็นเจ้าของธุรกิจ?',
+                        textAlign: TextAlign.center, style: AppFonts.ticontent),
                     const SizedBox(height: 10),
                     Text(
                       '"เข้าร่วมกับเราเพื่อเปิดร้านค้าออนไลน์ของคุณและเริ่มขายสินค้าได้ทันที!"',

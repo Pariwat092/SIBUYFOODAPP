@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:sibuyapp/classallapp/colors.dart';
 import 'package:sibuyapp/classallapp/costomappbar.dart';
+import 'package:sibuyapp/classallapp/styleText.dart';
 import 'package:sibuyapp/mystore/registerstore.dart';
 
 class StorePolicyPage extends StatefulWidget {
@@ -24,9 +25,9 @@ class _StorePolicyPageState extends State<StorePolicyPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               'นโยบายความเป็นส่วนตัว (Privacy Policy)',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: AppFonts.ticontent,
             ),
             const SizedBox(height: 16),
             const Text(
@@ -44,9 +45,9 @@ class _StorePolicyPageState extends State<StorePolicyPage> {
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
-            const Text(
+            Text(
               'นโยบายการคืนสินค้าและการคืนเงิน (Return and Refund Policy)',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: AppFonts.ticontent,
             ),
             const SizedBox(height: 16),
             const Text(

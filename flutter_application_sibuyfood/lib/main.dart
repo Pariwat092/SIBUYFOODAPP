@@ -4,6 +4,7 @@ import 'package:sibuyapp/Home/Listporduct/stoepopularall.dart';
 import 'package:sibuyapp/Home/stroepopular.dart';
 
 import 'package:sibuyapp/Home/view_producys.dart';
+import 'package:sibuyapp/Myproduct/confre_oder.dart';
 import 'package:sibuyapp/Myproduct/payment.dart';
 
 import 'package:sibuyapp/StartApp/firstlogin.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: Firstlogin(),
+      home: ConfreOder(),
     );
   }
 }
